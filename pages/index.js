@@ -19,9 +19,9 @@ export default function Index({AllData, HealthData, EducationData,AnimalData}) {
       <FilterWrapper>
         <FilterAltIcon style={{fontSize:40}} />
         <Category onClick={() => setFilter(AllData)}>All</Category>
-        <Category onClick={() => setFilter(HealthData)}>Health</Category>
-        <Category onClick={() => setFilter(EducationData)}>Education</Category>
-        <Category onClick={() => setFilter(AnimalData)}>Animal</Category>
+        <Category onClick={() => setFilter(HealthData)}>Docs</Category>
+        <Category onClick={() => setFilter(EducationData)}>Film</Category>
+        <Category onClick={() => setFilter(AnimalData)}>Series</Category>
       </FilterWrapper>
 
       {/* Cards Container */}
