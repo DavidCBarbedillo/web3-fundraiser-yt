@@ -87,7 +87,7 @@ const FormRight = styled.div`
 const FormInput = styled.div`
   display:flex ;
   flex-direction:column;
-  font-family:'poppins';
+  font-family:'Segoe UI';
   margin-top:10px ;
 `
 
@@ -107,6 +107,13 @@ const Input = styled.input`
   outline:none;
   font-size:large;
   width:100% ;
+  box-shadow: 0 0 1px 1px #17b2ff;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+  -webkit-border: 20px !important;
+  -moz-border: 20px !important;
+  border: 20px !important;
 ` 
 
 const RowFirstInput = styled.div`
@@ -131,6 +138,13 @@ const Select = styled.select`
   outline:none;
   font-size:large;
   width:100% ;
+  box-shadow: 0 0 1px 1px #17b2ff;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+  -webkit-border: 20px !important;
+  -moz-border: 20px !important;
+  border: 20px !important;
 `
 
 const Image = styled.input`

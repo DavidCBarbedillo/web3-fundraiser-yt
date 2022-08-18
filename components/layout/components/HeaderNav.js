@@ -36,7 +36,7 @@ const HeaderNavLinks = styled.div`
   justify-content: space-between;
   background-color: ${(props) => props.active ? props.theme.bgSubDiv : props.theme.bgDiv };
   height: 100%;
-  font-family: 'Roboto';
+  font-family: 'Segoe UI';
   margin: 5px;
   border-radius: 10px;
   padding: 0 5px 0 5px;

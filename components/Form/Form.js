@@ -112,6 +112,7 @@ const FormWrapper = styled.div`
 
 const FormMain = styled.div`
     width:80%;
+
 `
 
 const FormInputsWrapper = styled.div`

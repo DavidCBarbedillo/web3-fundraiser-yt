@@ -12,9 +12,7 @@ const HeaderRight = () => {
   return (
     <HeaderRightWrapper>
       <Wallet />
-      <ThemeToggle onClick={ThemeToggler.changeTheme}>
-      {ThemeToggler.theme === 'light' ? <DarkModeIcon /> : <Brightness7Icon />}
-      </ThemeToggle>
+
     </HeaderRightWrapper>
   )
 }

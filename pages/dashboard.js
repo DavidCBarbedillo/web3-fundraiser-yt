@@ -113,6 +113,7 @@ const Card = styled.div`
   &:hover{
     transform: translateY(-10px);
     transition: transform 0.5s;
+    box-shadow: 0px 1px 10px #17b2ff;
   }
   
   &:not(:hover){
@@ -125,7 +126,7 @@ const CardImg = styled.div`
   width: 100%;
 `
 const Title = styled.h2`
-  font-family: 'Roboto';
+  font-family: 'Segoe UI';
   font-size: 18px;
   margin: 2px 0px;
   background-color: ${(props) => props.theme.bgSubDiv};
@@ -146,7 +147,7 @@ const Text = styled.p`
   align-items: center;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: 'Segoe UI';
   font-size: 18px;
   font-weight: bold;
 `
@@ -159,7 +160,7 @@ const Button = styled.button`
       linear-gradient(180deg, #00b712 0%, #5aff15 80%); 
   border: none;
   cursor: pointer;
-  font-family: 'Roboto';
+  font-family: 'Segoe UI';
   text-transform: uppercase;
   color: #fff;
   font-size: 14px;

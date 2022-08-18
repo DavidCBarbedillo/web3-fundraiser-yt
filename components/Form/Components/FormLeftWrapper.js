@@ -41,12 +41,20 @@ const Input = styled.input`
   outline:none;
   font-size:large;
   width:100% ;
+  box-shadow: 0 0 1px 1px #17b2ff;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+  -webkit-border: 20px !important;
+  -moz-border: 20px !important;
+  border: 20px !important;
 `
 
 const TextArea = styled.textarea`
   padding:15px;
   background-color:${(props) => props.theme.bgDiv} ;
   color:${(props) => props.theme.color} ;
+  font-family: "Segoe UI";
   margin-top:4px;
   border:none;
   border-radius:8px ;
@@ -56,6 +64,13 @@ const TextArea = styled.textarea`
   min-width:100%;
   overflow-x:hidden;
   min-height:160px ;
+  box-shadow: 0 0 1px 1px #17b2ff;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+  -webkit-border: 20px !important;
+  -moz-border: 20px !important;
+  border: 20px !important;
 `
 
 export default FormLeftWrapper;
