@@ -63,7 +63,7 @@ const ConnectWalletWrapper = styled.div`
   border-radius: 14px;
   margin-right: 15px;
   font-family: 'Segoe UI';
-  font-weight: bold;
+  font-weight: normal;
   font-size: small;
   cursor: pointer;
   background: #00000010;
