@@ -1,6 +1,6 @@
 const light = {
     color: "#fff",
-    bgColor: 'blue',
+    bgColor: 'black',
     bgImage: 'blue',
     bgDiv: 'black',
     bgSubDiv: 'rgb(33, 36, 41)'
@@ -8,7 +8,7 @@ const light = {
 
 const dark = {
     color: '#fff',
-    bgColor: 'blue',
+    bgColor: 'black',
     bgImage: 'blue',
     bgDiv: 'black',
     bgSubDiv: 'rgb(33, 36, 41)'
