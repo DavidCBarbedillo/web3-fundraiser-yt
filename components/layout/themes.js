@@ -9,7 +9,7 @@ const light = {
 const dark = {
     color: '#fff',
     bgColor: 'black',
-    bgImage: 'blue',
+    bgImage: 'black',
     bgDiv: 'black',
     bgSubDiv: 'rgb(33, 36, 41)'
 }
