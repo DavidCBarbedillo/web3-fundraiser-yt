@@ -1,17 +1,17 @@
 const light = {
-    color: "#fff",
-    bgColor: 'black',
+    color: "white",
+    bgColor: '#0d6efd',
     bgImage: 'blue',
-    bgDiv: 'black',
-    bgSubDiv: 'rgb(33, 36, 41)'
+    bgDiv: 'blue',
+    bgSubDiv: 'grey'
 }
 
 const dark = {
-    color: '#fff',
-    bgColor: 'black',
-    bgImage: 'black',
-    bgDiv: 'black',
-    bgSubDiv: 'rgb(33, 36, 41)'
+    color: 'white',
+    bgColor: 'white',
+    bgImage: 'blue',
+    bgDiv: 'blue',
+    bgSubDiv: 'grey'
 }
 
 const themes = {

@@ -168,7 +168,7 @@ const Category = styled.div`
   font-family: 'Segoe UI';
   font-weight: normal;
   cursor: pointer;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
 `
 const CardsWrapper = styled.div`
   display: flex;
@@ -176,7 +176,7 @@ const CardsWrapper = styled.div`
   flex-wrap: wrap;
   width: 80%;
   margin-top: 25px;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
 `
 const Card = styled.div`
   width: 30%;
@@ -185,7 +185,7 @@ const Card = styled.div`
   &:hover{
     transform: translateY(-10px);
     transition: transform 0.5s;
-    box-shadow: 0px 1px 10px #17b2ff;
+    box-shadow: 0px 0px 0px #17b2ff;
   }
   
   &:not(:hover){
@@ -196,7 +196,7 @@ const CardImg = styled.div`
   position: relative;
   height: 120px;
   width: 100%;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
 `
 const Title = styled.h2`
   font-family: 'Segoe UI';
@@ -206,7 +206,7 @@ const Title = styled.h2`
   padding: 5px;
   cursor: pointer;
   font-weight: normal;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
 `
 const CardData = styled.div`
   display: flex;
@@ -215,7 +215,7 @@ const CardData = styled.div`
   background-color: ${(props) => props.theme.bgSubDiv};
   padding: 5px;
   cursor: pointer;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
   `
 const Text = styled.p`
   display: flex;
@@ -225,7 +225,7 @@ const Text = styled.p`
   font-family: 'Segoe UI';
   font-size: 18px;
   font-weight: bold;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
 `
 const Button = styled.button`
   padding: 8px;
@@ -241,5 +241,5 @@ const Button = styled.button`
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  box-shadow: 0px 1px 10px #17b2ff;
+  box-shadow: 0px 0px 0px #17b2ff;
 `

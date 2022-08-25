@@ -8,7 +8,7 @@ const HeaderLogo = () => {
 
 const Logo = styled.h1`
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 11px;
   font-family: 'Segoe UI';
   letter-spacing: 3px;

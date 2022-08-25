@@ -113,7 +113,7 @@ const Card = styled.div`
   &:hover{
     transform: translateY(-10px);
     transition: transform 0.5s;
-    box-shadow: 0px 1px 10px #17b2ff;
+    box-shadow: 0px 0px 0px #17b2ff;
   }
   
   &:not(:hover){

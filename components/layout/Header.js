@@ -19,8 +19,8 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  box-shadow: 0 0 1px 1px #17b2ff;
+  background-color: blue;
+  box-shadow: 0 0 0px 0px #17b2ff;
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;

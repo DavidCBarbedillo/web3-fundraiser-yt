@@ -24,7 +24,7 @@ const HeaderNavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${(props) => props.theme.bgDiv};
+  background-color: blue;
   padding: 6px;
   height: 50%;
   border-radius: 10px;
@@ -34,7 +34,7 @@ const HeaderNavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${(props) => props.active ? props.theme.bgSubDiv : props.theme.bgDiv };
+  background-color: blue;
   height: 100%;
   font-family: 'Segoe UI';
   margin: 5px;
