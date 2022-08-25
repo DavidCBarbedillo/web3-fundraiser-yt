@@ -89,6 +89,7 @@ const FormInput = styled.div`
   flex-direction:column;
   font-family:'Segoe UI';
   margin-top:10px ;
+  color: black;
 `
 
 const FormRow = styled.div`

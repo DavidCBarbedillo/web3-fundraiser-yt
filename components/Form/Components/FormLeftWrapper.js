@@ -30,6 +30,7 @@ const FormInput = styled.div`
   flex-direction:column;
   font-family:'poppins';
   margin-top:10px ;
+  color: black;
 `
 const Input = styled.input`
   padding:15px;
@@ -51,9 +52,9 @@ const Input = styled.input`
 `
 
 const TextArea = styled.textarea`
-  padding:15px;
-  background-color:${(props) => props.theme.bgDiv} ;
-  color:${(props) => props.theme.color} ;
+  padding: 15px;
+  background-color: ${(props) => props.theme.bgDiv};
+  color: ${(props) => props.theme.color};
   font-family: "Segoe UI";
   margin-top:4px;
   border:none;
