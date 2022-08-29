@@ -8,13 +8,13 @@ import { ethers } from 'ethers';
 import CampaignFactory from '../artifacts/contracts/Campaign.sol/CampaignFactory.json'
 import { useState } from 'react';
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Index({AllData, HealthData, EducationData,AnimalData}) {
   const [filter, setFilter] = useState(AllData);
 
   return (
     <HomeWrapper>
-
       {/* Filter Section */}
       <FilterWrapper>
         <FilterAltIcon style={{fontSize:40}} />
