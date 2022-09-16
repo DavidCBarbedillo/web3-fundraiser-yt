@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import {TailSpin} from 'react-loader-spinner'
 import {create as IPFSHTTPClient} from 'ipfs-http-client';
 
-const client = IPFSHTTPClient("https://ipfs.infura.io:5001");
+const client = IPFSHTTPClient("https://ipfs.infura.io:5001/api/v0");
 
 const FormRightWrapper = () => {
   const Handler = useContext(FormState);
