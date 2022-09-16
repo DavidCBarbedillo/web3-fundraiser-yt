@@ -145,7 +145,7 @@ const Button = styled.button`
   width: 30%;
   padding: 15px;
   color: white;
-  background-color:#00b712 ;
+  background-color: #00b712;
   background-image:
       linear-gradient(180deg, #00b712 0%, #5aff15 80%) ;
   border: none;
