@@ -5,7 +5,18 @@ import { toast } from 'react-toastify';
 import {TailSpin} from 'react-loader-spinner'
 import {create as IPFSHTTPClient} from 'ipfs-http-client';
 
-const client = IPFSHTTPClient("https://ipfs.infura.io:5001/api/v0");
+const projectId = '2ErvKk9gqHfw97wOOlgttwHW5Zj'
+const projectSecret = '3830092b3a6553615dee747e52bd9967'
+const auth = 'Basic ' + Buffer.from(projectId + ":" + projectSecret).toString('base64')
+
+const client = IPFSHTTPClient({
+  host:'ipfs.infura.io',
+  port:5001,
+  protocol: 'https',
+  headers: {
+    authorization: auth
+  }
+})
 
 const FormRightWrapper = () => {
   const Handler = useContext(FormState);
@@ -42,42 +53,42 @@ const FormRightWrapper = () => {
       toast.success("Files Uploaded Sucessfully")
 }
 
-  return (
-    <FormRight>
-      <FormInput>
-        <FormRow>
-          <RowFirstInput>
-            <label>Required Amount</label>
-            <Input onChange={Handler.FormHandler} value={Handler.form.requiredAmount} name="requiredAmount" type={'number'} placeholder='Required Amount'></Input>
-          </RowFirstInput>
-          <RowSecondInput>
-            <label>Choose Category</label>
-            <Select onChange={Handler.FormHandler} value={Handler.form.category} name="category">
-              <option>Film</option>
-              <option>Docs</option>
-              <option>Series</option>
-            </Select>
-          </RowSecondInput>
-        </FormRow>
-      </FormInput>
-      {/* Image */}
-      <FormInput>
-        <label>Select Image</label>
-        <Image alt="dapp" onChange={Handler.ImageHandler} type={'file'} accept='image/*'>
-        </Image>
-      </FormInput>
-      {uploadLoading == true ? <Button><TailSpin color='#fff' height={20} /></Button> :
-        uploaded == false ? 
-        <Button onClick={uploadFiles}>
-          Upload Files to IPFS
-        </Button>
-        : <Button style={{cursor: "no-drop"}}>Files uploaded Sucessfully</Button>
-      }
-      <Button onClick={Handler.startCampaign}>
-        Start Campaign
+return (
+  <FormRight>
+    <FormInput>
+      <FormRow>
+        <RowFirstInput>
+          <label>Required Amount</label>
+          <Input onChange={Handler.FormHandler} value={Handler.form.requiredAmount} name="requiredAmount" type={'number'} placeholder='Required Amount'></Input>
+        </RowFirstInput>
+        <RowSecondInput>
+          <label>Choose Category</label>
+          <Select onChange={Handler.FormHandler} value={Handler.form.category} name="category">
+            <option>Film</option>
+            <option>Docs</option>
+            <option>Series</option>
+          </Select>
+        </RowSecondInput>
+      </FormRow>
+    </FormInput>
+    {/* Image */}
+    <FormInput>
+      <label>Select Image</label>
+      <Image alt="dapp" onChange={Handler.ImageHandler} type={'file'} accept='image/*'>
+      </Image>
+    </FormInput>
+    {uploadLoading == true ? <Button><TailSpin color='#fff' height={20} /></Button> :
+      uploaded == false ? 
+      <Button onClick={uploadFiles}>
+        Upload Files to IPFS
       </Button>
-    </FormRight>
-  )
+      : <Button style={{cursor: "no-drop"}}>Files uploaded Sucessfully</Button>
+    }
+    <Button onClick={Handler.startCampaign}>
+      Start Campaign
+    </Button>
+  </FormRight>
+)
 }
 
 const FormRight = styled.div`
@@ -157,6 +168,7 @@ const Image = styled.input`
   outline:none;
   font-size:large;
   width:100% ;
+  
   &::-webkit-file-upload-button {
     padding: 15px ;
     background-color: ${(props) => props.theme.bgSubDiv} ;

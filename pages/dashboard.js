@@ -60,7 +60,7 @@ export default function Dashboard() {
             <Image 
               alt="crowdfunding dapp"
               layout='fill' 
-              src={"https://ipfs.infura.io/ipfs/" + e.image} 
+              src={"https://crowdfunding.infura-ipfs.io/ipfs/" + e.image} 
             />
           </CardImg>
           <Title>
@@ -110,6 +110,7 @@ const Card = styled.div`
   width: 30%;
   margin-top: 20px;
   background-color: ${(props) => props.theme.bgDiv};
+  
   &:hover{
     transform: translateY(-10px);
     transition: transform 0.5s;

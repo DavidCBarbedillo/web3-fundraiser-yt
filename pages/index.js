@@ -8,13 +8,13 @@ import { ethers } from 'ethers';
 import CampaignFactory from '../artifacts/contracts/Campaign.sol/CampaignFactory.json'
 import { useState } from 'react';
 import Link from 'next/link'
-import Head from 'next/head'
 
 export default function Index({AllData, HealthData, EducationData,AnimalData}) {
   const [filter, setFilter] = useState(AllData);
 
   return (
     <HomeWrapper>
+
       {/* Filter Section */}
       <FilterWrapper>
         <FilterAltIcon style={{fontSize:40}} />
@@ -35,7 +35,7 @@ export default function Index({AllData, HealthData, EducationData,AnimalData}) {
             <Image 
               alt="Crowdfunding dapp"
               layout='fill' 
-              src={"https://ipfs.infura.io/ipfs/" + e.image} 
+              src={"https://crowdfunding.infura-ipfs.io/ipfs/" + e.image} 
             />
           </CardImg>
           <Title>
@@ -182,6 +182,7 @@ const Card = styled.div`
   width: 30%;
   margin-top: 20px;
   background-color: ${(props) => props.theme.bgDiv};
+  
   &:hover{
     transform: translateY(-10px);
     transition: transform 0.5s;
