@@ -8,7 +8,7 @@ const light = {
 
 const dark = {
     color: 'white',
-    bgColor: 'white',
+    bgColor: '#00004b',
     bgImage: 'blue',
     bgDiv: 'blue',
     bgSubDiv: 'grey'

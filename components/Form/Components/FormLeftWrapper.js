@@ -30,7 +30,7 @@ const FormInput = styled.div`
   flex-direction:column;
   font-family:'poppins';
   margin-top:10px ;
-  color: black;
+  color: white;
 `
 const Input = styled.input`
   padding:15px;

@@ -40,7 +40,7 @@ const LayoutWrapper = styled.div`
   min-height: 100vh;
   background-color: ${(props) => props.theme.bgColor};
   background-image: ${(props) => props.theme.bgImage};
-  color: ${(props) => props.theme.color};
+  color: white;
 `;
 
 export default Layout;
