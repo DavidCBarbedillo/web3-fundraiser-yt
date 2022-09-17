@@ -6,6 +6,8 @@ import {TailSpin} from 'react-loader-spinner';
 import {ethers} from 'ethers';
 import {toast} from 'react-toastify';
 import CampaignFactory from '../../artifacts/contracts/Campaign.sol/CampaignFactory.json'
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const FormState = createContext();
 
@@ -88,9 +90,7 @@ const Form = () => {
                 <Address>
                     <h1>Campagin Started Sucessfully!</h1>
                     <h1>{address}</h1>
-                    <Button>
-                        Go To Campaign
-                    </Button>
+                    <Link passHref href={'/' + e.address}><Button>Go to Campaign</Button></Link>
                 </Address>
                 :
                     <FormInputsWrapper>
