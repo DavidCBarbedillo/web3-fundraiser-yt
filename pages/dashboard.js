@@ -60,7 +60,7 @@ export default function Dashboard() {
             <Image 
               alt="crowdfunding dapp"
               layout='fill' 
-              src={"https://crowdfunding.infura-ipfs.io/ipfs/" + e.image} 
+              src={"https://crowdfundingnewfilmtech.infura-ipfs.io/ipfs/" + e.image} 
             />
           </CardImg>
           <Title>
