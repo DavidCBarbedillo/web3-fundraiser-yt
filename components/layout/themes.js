@@ -11,7 +11,7 @@ const dark = {
     bgColor: '#00004b',
     bgImage: 'blue',
     bgDiv: 'blue',
-    bgSubDiv: 'grey'
+    bgSubDiv: 'blue'
 }
 
 const themes = {
