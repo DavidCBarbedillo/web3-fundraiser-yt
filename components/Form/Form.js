@@ -78,31 +78,33 @@ const Form = () => {
         }
     }
 
-  return (
-      <FormState.Provider value={{form, setForm, image, setImage, ImageHandler, FormHandler, setImageUrl, setStoryUrl, startCampaign, setUploaded}} >
-    <FormWrapper>
-        <FormMain>
-            {loading == true ?
-                address == "" ?
-                    <Spinner>
-                        <TailSpin height={60} />
-                    </Spinner> :
-                <Address>
-                    <h1>Campagin Started Sucessfully!</h1>
-                    <h1>{address}</h1>
-                    <Link passHref href={'/' + e.address}><Button>Go to Campaign</Button></Link>
-                </Address>
-                :
-                    <FormInputsWrapper>
-                        <FormLeftWrapper />
-                        <FormRightWrapper />
-                    </FormInputsWrapper>               
-            }
-        </FormMain>
-    </FormWrapper>
-    </FormState.Provider>
-  )
-}
+    return (
+        <FormState.Provider value={{form, setForm, image, setImage, ImageHandler, FormHandler, setImageUrl, setStoryUrl, startCampaign, setUploaded}} >
+      <FormWrapper>
+          <FormMain>
+              {loading == true ?
+                  address == "" ?
+                      <Spinner>
+                          <TailSpin height={60} />
+                      </Spinner> :
+                  <Address>
+                      <h1>Campagin Started Sucessfully!</h1>
+                      <h1>{address}</h1>
+                      <Button>
+                          Go To Campaign
+                      </Button>
+                  </Address>
+                  :
+                      <FormInputsWrapper>
+                          <FormLeftWrapper />
+                          <FormRightWrapper />
+                      </FormInputsWrapper>               
+              }
+          </FormMain>
+      </FormWrapper>
+      </FormState.Provider>
+    )
+  }
 
 const FormWrapper = styled.div`
     width: 100%;
