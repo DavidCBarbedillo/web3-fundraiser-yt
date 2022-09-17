@@ -88,11 +88,11 @@ const Form = () => {
                           <TailSpin height={60} />
                       </Spinner> :
                   <Address>
-                      <h1>Campagin Started Sucessfully!</h1>
+                      <h1>Campaign Started Sucessfully!</h1>
                       <h1>{address}</h1>
-                      <Button>
-                          Go To Campaign
-                      </Button>
+                      <Link passHref href={'/'}><Button>
+                       Go to Campaigns
+                      </Button></Link>
                   </Address>
                   :
                       <FormInputsWrapper>
