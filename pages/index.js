@@ -218,7 +218,7 @@ const CardData = styled.div`
   cursor: pointer;
   box-shadow: 0px 0px 0px #17b2ff;
   `
-const Text = styled.p`
+const Text = styled.div`
   display: flex;
   align-items: center;
   margin: 0;

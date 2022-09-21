@@ -230,7 +230,7 @@ const ImageSection = styled.div`
   position: relative;
   height: 350px;
 `;
-const Text = styled.p`
+const Text = styled.div`
   font-family: "Roboto";
   font-size: large;
   color: ${(props) => props.theme.color};
@@ -288,7 +288,7 @@ const Funds = styled.div`
   border-radius: 8px;
   text-align: center;
 `;
-const FundText = styled.p`
+const FundText = styled.div`
   margin: 2px;
   padding: 0;
   font-family: "Poppins";
@@ -322,7 +322,7 @@ const Donation = styled.div`
   background-color: ${(props) => props.theme.bgSubDiv};
   padding: 4px 8px;
 `;
-const DonationData = styled.p`
+const DonationData = styled.div`
   color: ${(props) => props.theme.color};
   font-family: "Roboto";
   font-size: large;

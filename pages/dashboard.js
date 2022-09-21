@@ -143,7 +143,7 @@ const CardData = styled.div`
   padding: 5px;
   cursor: pointer;
   `
-const Text = styled.p`
+const Text = styled.div`
   display: flex;
   align-items: center;
   margin: 0;
