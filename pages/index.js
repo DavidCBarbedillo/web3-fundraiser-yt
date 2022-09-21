@@ -8,9 +8,19 @@ import { ethers } from 'ethers';
 import CampaignFactory from '../artifacts/contracts/Campaign.sol/CampaignFactory.json'
 import { useState } from 'react';
 import Link from 'next/link'
+import React from "react";
 
 export default function Index({AllData, HealthData, EducationData,AnimalData}) {
   const [filter, setFilter] = useState(AllData);
+  
+  const [hydrated, setHydrated] = React.useState(false);
+  React.useEffect(() => {
+      setHydrated(true);
+  }, []);
+  if (!hydrated) {
+      // Returns null on first render, so the client and server match
+      return null;
+  }
 
   return (
     <HomeWrapper>
@@ -24,7 +34,7 @@ export default function Index({AllData, HealthData, EducationData,AnimalData}) {
         <Category onClick={() => setFilter(AnimalData)}>Series</Category>
       </FilterWrapper>
 
-      {/* Cards Container */}
+       {/* Cards Container */}
       <CardsWrapper>
 
       {/* Card */}
@@ -137,7 +147,8 @@ export async function getStaticProps() {
       HealthData,
       EducationData,
       AnimalData
-    }
+    },
+    revalidate: 10
   }
 }
 
@@ -151,13 +162,14 @@ const HomeWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: calc(100vw * 0.5);
   
 `
 const FilterWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 80%;
-  margin-top: 15px;
+  margin-top: 35px;
   
 `
 const Category = styled.div`
@@ -176,12 +188,16 @@ const CardsWrapper = styled.div`
   flex-wrap: wrap;
   width: 80%;
   margin-top: 25px;
+  border-radius: 25px;
   box-shadow: 0px 0px 0px #17b2ff;
 `
 const Card = styled.div`
   width: 30%;
   margin-top: 20px;
   background-color: ${(props) => props.theme.bgDiv};
+  width: 17vw;
+  border-radius: 25px;
+  transition: transform .4s;
   
   &:hover{
     transform: translateY(-10px);
@@ -232,7 +248,7 @@ const Button = styled.button`
   padding: 8px;
   text-align: center;
   width: 100%;
-  background-color:#00b712 ;
+  background-color: #00b712;
   background-image:
       linear-gradient(180deg, #00b712 0%, #5aff15 80%); 
   border: none;

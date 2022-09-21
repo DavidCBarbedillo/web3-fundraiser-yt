@@ -205,7 +205,8 @@ export async function getStaticProps(context) {
     props: {
       Data,
       DonationsData
-    }
+    },
+    revalidate: 10
   }
 
 
@@ -228,7 +229,7 @@ const RightContainer = styled.div`
 const ImageSection = styled.div`
   width: 100%;
   position: relative;
-  height: 350px;
+  height: 500px;
 `;
 const Text = styled.div`
   font-family: "Roboto";

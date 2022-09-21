@@ -98,6 +98,8 @@ const HomeWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 25px;
+  height: calc(100vw * 0.5);
 `
 const CardsWrapper = styled.div`
   display: flex;
@@ -105,11 +107,16 @@ const CardsWrapper = styled.div`
   flex-wrap: wrap;
   width: 80%;
   margin-top: 25px;
+  margin-bottom: 25px;
 `
 const Card = styled.div`
   width: 30%;
   margin-top: 20px;
+  margin-bottom: 20px;
   background-color: ${(props) => props.theme.bgDiv};
+  width: 17vw;
+  border-radius: 25px;
+  transition: transform .4s;
   
   &:hover{
     transform: translateY(-10px);
