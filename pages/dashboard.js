@@ -115,7 +115,7 @@ const Card = styled.div`
   margin-bottom: 20px;
   background-color: ${(props) => props.theme.bgDiv};
   width: 17vw;
-  border-radius: 25px;
+
   transition: transform .4s;
   
   &:hover{

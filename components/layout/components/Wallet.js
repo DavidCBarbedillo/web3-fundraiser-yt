@@ -56,23 +56,20 @@ const ConnectWalletWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: blue;
-  padding: 5px 12px;
-  height: 100%;
+  
+  padding: 3px 13px;
+  height: 85%;
   
   border-radius: 14px;
   margin-right: 15px;
   font-family: 'Segoe UI';
-  font-weight: small;
+  font-weight: 500;
   font-size: 10px;
   cursor: pointer;
-  background: blue;
-  box-shadow: 0px 0px 0px #17b2ff;
-  color: blue;
   
-  
-  
-  
+  background: white;
+  box-shadow: 0px 0px 5px 0px black;
+  color: black;  
 `;
 
 const Address = styled.h2`
