@@ -267,9 +267,8 @@ const Donate = styled.button`
   justify-content: center;
   width: 40%;
   padding: 15px;
-  color: white;
-  background-color: #00b712;
-  background-image: linear-gradient(180deg, #00b712 0%, #5aff15 80%);
+  color: black;
+  background-color: white;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -314,7 +313,8 @@ const DonationTitle = styled.div`
   text-transform: uppercase;
   padding: 4px;
   text-align: center;
-  background-color: #4cd137;
+  color: black;
+  background-color: white;
 `;
 const Donation = styled.div`
   display: flex;

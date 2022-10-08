@@ -248,14 +248,12 @@ const Button = styled.button`
   padding: 8px;
   text-align: center;
   width: 100%;
-  background-color: #00b712;
-  background-image:
-      linear-gradient(180deg, #00b712 0%, #5aff15 80%); 
+  background-color: white;
   border: none;
   cursor: pointer;
   font-family: 'Segoe UI';
   text-transform: uppercase;
-  color: #fff;
+  color: black;
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0px 0px 0px #17b2ff;

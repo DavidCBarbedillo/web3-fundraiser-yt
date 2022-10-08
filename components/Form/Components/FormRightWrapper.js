@@ -171,10 +171,8 @@ const Button = styled.button`
   justify-content: center;
   width: 100%;
   padding: 15px;
-  color: white;
-  background-color: #00b712;
-  background-image:
-      linear-gradient(180deg, #00b712 0%, #5aff15 80%) ;
+  color: black;
+  background-color: white;
   border: none;
   margin-top: 30px;
   cursor: pointer;
