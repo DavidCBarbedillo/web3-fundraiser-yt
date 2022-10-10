@@ -67,13 +67,13 @@ const ConnectWalletWrapper = styled.div`
   font-size: 10px;
   cursor: pointer;
   
-  background: white;
+  background: #f2f6ff;
   box-shadow: 0px 0px 5px 0px #2e7db7;
   color: #2e7db7;  
 `;
 
 const Address = styled.h2`
-    background-color: white;
+    background-color: #f2f6ff;
     height: 100%;
     display: flex;
     align-items: center;
