@@ -164,7 +164,6 @@ const Button = styled.button`
   text-align: center;
   width: 100%;
   background-color: white;
-
   border: none;
   cursor: pointer;
   font-family: 'Segoe UI';

@@ -68,8 +68,8 @@ const ConnectWalletWrapper = styled.div`
   cursor: pointer;
   
   background: white;
-  box-shadow: 0px 0px 5px 0px black;
-  color: black;  
+  box-shadow: 0px 0px 5px 0px #2e7db7;
+  color: #2e7db7;  
 `;
 
 const Address = styled.h2`
