@@ -24,6 +24,9 @@ const HeaderWrapper = styled.div`
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
+
+
+
   
 `
 

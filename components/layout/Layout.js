@@ -41,6 +41,19 @@ const LayoutWrapper = styled.div`
   background-color: ${(props) => props.theme.bgColor};
   background-image: ${(props) => props.theme.bgImage};
   color: white;
+
+
+  @media (max-width: 768px) {
+    width: 228vh;
+    height: 500vh;
+  }
+
+  @media (max-width: 474px) {
+    width: 128vh;
+    height: 300vh;
+  }
+
+
 `;
 
 export default Layout;

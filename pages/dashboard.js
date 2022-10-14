@@ -116,6 +116,11 @@ const Card = styled.div`
   background-color: ${(props) => props.theme.bgDiv};
   width: 17vw;
 
+  @media (max-width: 824px) {
+    width: 45%;
+    
+  }
+
   transition: transform .4s;
   
   &:hover{
@@ -132,6 +137,16 @@ const CardImg = styled.div`
   position: relative;
   height: 120px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    width: 40%;
+    position: relative;
+  }
+
+  @media (max-width: 474px) {
+    width: 60%;
+    
+  }
 `
 const Title = styled.h2`
   font-family: 'Segoe UI';
@@ -158,6 +173,11 @@ const Text = styled.div`
   font-family: 'Segoe UI';
   font-size: 18px;
   font-weight: bold;
+
+  @media (max-width: 1122px) {
+    font-size: 12px;
+    
+  }
 `
 const Button = styled.button`
   padding: 8px;
@@ -171,4 +191,9 @@ const Button = styled.button`
   color: black;
   font-size: 14px;
   font-weight: bold;
+
+  @media (max-width: 1122px) {
+    font-size: 12px;
+    
+  }
 `

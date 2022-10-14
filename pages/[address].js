@@ -218,18 +218,43 @@ const DetailWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  width: 98%;
+  width: 96%;
 `;
 const LeftContainer = styled.div`
   width: 45%;
 `;
 const RightContainer = styled.div`
-  width: 50%;
+  width: 48%;
 `;
 const ImageSection = styled.div`
   width: 100%;
   position: relative;
   height: 500px;
+
+  @media (max-width: 1230px) {
+    height: 65%;
+    
+  }
+
+  @media (max-width: 1100px) {
+    height: 60%;
+    
+  }
+
+  @media (max-width: 843px) {
+    height: 45%;
+    
+  }
+
+  @media (max-width: 768px) {
+    height: 85%;
+    
+  }
+
+  @media (max-width: 474px) {
+    height: 55%;
+    
+  }
 `;
 const Text = styled.div`
   font-family: "Roboto";
@@ -329,4 +354,9 @@ const DonationData = styled.div`
   font-size: large;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 843px) {
+    font-size: small;
+    
+  }
 `;

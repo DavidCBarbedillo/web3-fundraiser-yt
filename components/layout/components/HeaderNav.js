@@ -28,6 +28,7 @@ const HeaderNavWrapper = styled.div`
   padding: 6px;
   height: 50%;
   border-radius: 10px;
+
   `
 
 const HeaderNavLinks = styled.div`
